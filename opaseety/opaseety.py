@@ -1,4 +1,4 @@
-"""blend2.py
+"""opaseety.py
 
 Lorem Picsum: https://picsum.photos/
     Request specific size: https://picsum.photos/600
@@ -14,15 +14,18 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from pathlib import Path
 
-def blend(list_images): # Blend images equally.
+def blend(list_images):
+    """Blend images 'equally' - according to the number of images
+    
+    TODO: A more 'equal' way of blending might take into account the color profiles and 2D features of the images
+    Or maybe that wouldn't make a difference? Or make too much of a difference and make certain blends highly unbalanced?
 
+    Creating a 'fair' blend is hard imo unless you take care to pick good input images.
+    """
     equal_fraction = 1.0 / (len(list_images))
-
     output = np.zeros_like(list_images[0])
-
     for img in list_images:
         output = output + img * equal_fraction
-
     output = output.astype(np.uint8)
     return output
 
