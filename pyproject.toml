@@ -1,0 +1,65 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "opaseety"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "ImAKappa", email = "imaninconsp1cuouskappa@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "numpy==2.1",
+  "matplotlib==3.9",
+  "opencv-python",
+]
+
+[project.urls]
+Documentation = "https://github.com/ImAKappa/opaseety#readme"
+Issues = "https://github.com/ImAKappa/opaseety/issues"
+Source = "https://github.com/ImAKappa/opaseety"
+
+[tool.hatch.version]
+path = "opaseety/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:opaseety tests}"
+
+[tool.coverage.run]
+source_pkgs = ["opaseety", "tests"]
+branch = true
+parallel = true
+omit = [
+  "opaseety/__about__.py",
+]
+
+[tool.coverage.paths]
+opaseety = ["opaseety", "*/opaseety/opaseety"]
+tests = ["tests", "*/opaseety/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
