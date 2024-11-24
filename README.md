@@ -11,20 +11,21 @@ An image guessing game.
 
 - [opaseety](#opaseety)
   - [Table of Contents](#table-of-contents)
-- [How to play](#how-to-play)
-- [Contributing](#contributing)
+  - [How to play](#how-to-play)
+  - [Contributing](#contributing)
+  - [Images](#images)
   - [Installation](#installation)
   - [TODO](#todo)
   - [License](#license)
 
 
-# How to play
+## How to play
 
 ```bash
 python opaseety.py 
 ```
 
-# Contributing
+## Contributing
 
 Requires [hatch](https://hatch.pypa.io/latest/), a modern Python project manager.
 
@@ -47,6 +48,14 @@ Run the project using:
 ```
 python .\opaseety\opaseety.py -i .\data\
 ```
+
+## Images
+
+
+Lorem Picsum: https://picsum.photos/
+    Request specific size: https://picsum.photos/600
+    Request specific image: https://picsum.photos/id/21/600 
+Blending images: https://www.codespeedy.com/python-pil-image-blend-method/
 
 ## Installation
 
