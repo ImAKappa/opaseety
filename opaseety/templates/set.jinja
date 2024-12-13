@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set {{ set }}</title>
+</head>
+<body>
+    <p>Set {{ set }}</p>
+    <form method="post">
+        {% for effect in effects %}
+        <label for="fname">{{ effect }}</label>
+        <input type="checkbox" name="hello" value="{{ effect }}">
+        {% endfor %}
+        <input type="submit">
+    </form>
+</body>
+</html>
