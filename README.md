@@ -16,6 +16,7 @@ An image guessing game.
   - [Images](#images)
   - [Installation](#installation)
   - [TODO](#todo)
+  - [IDEAS](#ideas)
   - [License](#license)
 
 
@@ -80,6 +81,18 @@ Interesting, but not important:
 - [Deep Adversarial Decomposition: A Unified Framework for Separating
 Superimposed Images (Zhou et al. 2020)](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zou_Deep_Adversarial_Decomposition_A_Unified_Framework_for_Separating_Superimposed_Images_CVPR_2020_paper.pdf), and [GitHub Pytorch repo here](https://github.com/jiupinjia/Deep-adversarial-decomposition)
 - [Single Image Layer Separation using Relative Smoothness](https://yu-li.github.io/paper/li_cvpr14_layer.pdf) - this one's only kind of related to the problem
+
+## IDEAS
+
+UI
+- [ ] some boxes to check for added difficulty
+
+Skulls
+
+- [ ] another idea, distortions and lens filters
+- [ ] also quality 480p pics
+- [ ] first thought is colour filter
+- [ ] just layer the whole thing w different colour filters, would make it v hard
 
 ## License
 
